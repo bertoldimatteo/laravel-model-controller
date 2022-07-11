@@ -11,10 +11,10 @@
     <ul>   
         @foreach ($movies as $movie)
             <li>
-                <h2>{{$movie->title}}</h2>
-                <p>{{$movie->original_title}}</p>
-                <p>{{$movie->date}}</p>
-                <p>{{$movie->vote}}</p>
+                <a href="{{route('show', $movie->id)}}">
+                    <h2>{{$movie->title}}</h2>
+                    <p>{{$movie->original_title}}</p>
+                </a>
             </li>
         @endforeach
     </ul>

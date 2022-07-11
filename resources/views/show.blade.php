@@ -7,6 +7,7 @@
     <title>Movie</title>
 </head>
 <body>
+    <a href="{{route('homepage')}}">Home</a>
     <h1>{{$movie->title}}</h1>
     <h2>{{$movie->original_title}}</h2>
     <p>{{$movie->date}}</p>

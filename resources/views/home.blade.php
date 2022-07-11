@@ -8,5 +8,15 @@
 </head>
 <body>
     <h1>Movies</h1>
+    <ul>   
+        @foreach ($movies as $movie)
+            <li>
+                <h2>{{$movie->title}}</h2>
+                <p>{{$movie->original_title}}</p>
+                <p>{{$movie->date}}</p>
+                <p>{{$movie->vote}}</p>
+            </li>
+        @endforeach
+    </ul>
 </body>
 </html>
